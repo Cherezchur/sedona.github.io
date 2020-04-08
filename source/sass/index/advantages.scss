@@ -1,0 +1,31 @@
+.advantages__title {
+  @include title-style;
+}
+
+.advantages__list {
+  @include list-style;
+}
+
+.advantages__description--blue-bg {
+  @include blue-block;
+}
+
+.advantages__list-description {
+  @include list-style;
+
+  text-align: start;
+}
+
+.advantages__title-description,
+.advantages__item-title {
+  @include title-style;
+}
+
+.advantages__expl-description,
+.advantages__expl--dark-grey {
+  @include font-description;
+}
+
+.advantages__item--grey-bg {
+  background-color: #eeeeee;
+}

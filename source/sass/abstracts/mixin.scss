@@ -1,0 +1,23 @@
+//миксин для блоков с основным светло-голубым цветом и белым текстом
+
+@mixin blue-block {
+  background-color: $light-grey-blue;
+  color: rgb(255, 255, 255);
+}
+
+@mixin list-style {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+@mixin title-style {
+  font-family: $font-bold;
+  font-size: 18px;
+}
+
+@mixin font-description {
+  line-height: 21px;
+  color: $dark-grey;
+}

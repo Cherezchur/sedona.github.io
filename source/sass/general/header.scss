@@ -1,0 +1,14 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__link {
+  font-size: 18px;
+  line-height: 40px;
+  text-decoration: none;
+
+  @include blue-block;
+}
