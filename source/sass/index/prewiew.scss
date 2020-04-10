@@ -1,7 +1,3 @@
 .prewiew__landscape {
-  height: 389px;
-
-  background: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  @include bg-prewiew;
 }

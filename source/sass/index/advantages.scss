@@ -2,6 +2,10 @@
   @include title-style;
 }
 
+.advantages__main-description {
+  line-height: 26px;
+}
+
 .advantages__list {
   @include list-style;
 }

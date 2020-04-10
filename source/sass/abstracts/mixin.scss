@@ -21,3 +21,11 @@
   line-height: 21px;
   color: $dark-grey;
 }
+
+@mixin bg-prewiew {
+  height: 389px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,18 @@
+.gallery {
+  margin: 0 20px;
+}
+
+.gallery__title {
+  @include title-style;
+}
+
+.gallery__list {
+  @include list-style;
+
+  text-align: start;
+}
+
+.gallery__item-title {
+  font-family: $font-bold;
+  font-size: 14px;
+}
