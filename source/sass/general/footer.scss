@@ -1,0 +1,12 @@
+.page-footer__hash-tag {
+  font-family: $font-bold;
+  font-size: 21px;
+}
+
+.social-list {
+  @include list-style;
+}
+
+.socail-link {
+  background-color: $light-grey-blue;
+}
