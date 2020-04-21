@@ -15,6 +15,13 @@
 @mixin title-style {
   font-family: $font-bold;
   font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin big-title-style {
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 @mixin font-description {
@@ -28,4 +35,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+@mixin input-style {
+  @include title-style;
+  background-color: $form-grey;
+  border: none;
 }

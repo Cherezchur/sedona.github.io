@@ -1,0 +1,20 @@
+.video {
+
+}
+
+.video__title {
+  @include title-style;
+}
+
+.video__description {
+
+}
+
+.video__video-player {
+  background-color: lightsteelblue;
+  height: 200px;
+}
+
+.video__image {
+
+}

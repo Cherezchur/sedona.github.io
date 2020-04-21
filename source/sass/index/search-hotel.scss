@@ -1,0 +1,30 @@
+.search-hotel {
+
+}
+
+.search-hotel__title {
+  @include big-title-style;
+}
+
+.search-hotel__discription {
+  color: $dark-grey;
+}
+
+.search-hotel__button {
+  width: 280px;
+  height: 58px;
+  @include blue-block;
+  border: none;
+  font-weight: 700;
+
+  @include big-title-style;
+  text-transform: uppercase;
+}
+
+.search-hotel__wrapper-map {
+
+}
+
+.searcy-hotel__image-map {
+  background-color: lightgray;
+}

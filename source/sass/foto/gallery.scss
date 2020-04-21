@@ -6,11 +6,48 @@
   @include title-style;
 }
 
+.gallery__description {
+
+}
+
 .gallery__list {
   @include list-style;
 
   text-align: start;
 }
+
+.gallery__item {
+
+}
+
+.gallery__image {
+
+}
+
+.gallery__image--spaces {
+  background-color: goldenrod;
+}
+
+.gallery__image--vegetation {
+  background-color: sienna;
+}
+
+.gallery__image--road {
+  background-color: olivedrab;
+}
+
+.gallery__image--bridge {
+  background-color: orange;
+}
+
+.gallery__item-title {
+
+}
+
+.gallery__signature {
+
+}
+
 
 .gallery__item-title {
   font-family: $font-bold;

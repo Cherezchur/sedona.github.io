@@ -1,3 +1,7 @@
+.advantages {
+
+}
+
 .advantages__title {
   @include title-style;
 }
@@ -10,14 +14,70 @@
   @include list-style;
 }
 
+.advantages__item {
+
+}
+
+.advantages__item--city {
+
+}
+
 .advantages__description--blue-bg {
   @include blue-block;
+}
+
+.dvantages__item-title {
+
+}
+
+.advantages__number {
+
+}
+
+.advantages__expl {
+
+}
+
+.advantages__image {
+
 }
 
 .advantages__list-description {
   @include list-style;
 
   text-align: start;
+}
+
+.advantages__item-description {
+
+}
+
+.advantages__title-description {
+
+}
+
+.advantages__expl-description {
+
+}
+
+.advantages__item--bridge {
+
+}
+
+.advantages__item--grey-bg {
+  background-color: #eeeeee;
+}
+
+.advantages__expl--dark-grey {
+
+}
+
+.advantages__item--road {
+
+}
+
+.advantages__item--tourists {
+
 }
 
 .advantages__title-description,
@@ -28,8 +88,4 @@
 .advantages__expl-description,
 .advantages__expl--dark-grey {
   @include font-description;
-}
-
-.advantages__item--grey-bg {
-  background-color: #eeeeee;
 }

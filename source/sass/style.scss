@@ -13,8 +13,13 @@
 
 @import
   "index/prewiew.scss",
-  "index/advantages.scss";
+  "index/advantages.scss",
+  "index/search-hotel.scss";
 
 @import
   "foto/prewiew-min.scss",
-  "foto/gallery.scss";
+  "foto/gallery.scss",
+  "foto/video.scss";
+
+@import
+  "form/form.scss";
