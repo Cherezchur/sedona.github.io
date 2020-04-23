@@ -1,0 +1,109 @@
+.form {
+
+}
+
+.form__title {
+  @include title-style;
+}
+
+.form__description {
+  color: $dark-grey;
+}
+
+.form__rewiew {
+
+}
+
+.form__wrapper {
+  border-top: 1px solid $form-grey;
+}
+
+.form__module {
+  border-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.module-name {
+
+}
+
+.form__legent {
+  @include title-style;
+  margin: auto;
+  font-weight: bold;
+}
+
+.form__body {
+
+}
+
+.form__label--text {
+  line-height: 26px;
+  color: $dark-grey;
+}
+
+.module-name__input {
+  @include input-style;
+}
+
+.module-name__input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.module-contacts {
+
+}
+
+.module-contacts__input {
+  @include input-style;
+  font-weight: bold;
+  width: 100%;
+}
+
+.module-contacts__input::placeholder {
+  color: black;
+}
+
+.module-radio {
+
+}
+
+.module-radio__input {
+
+}
+
+.form__label--check {
+  @include title-style;
+  text-transform: none;
+  font-weight: bold;
+}
+
+.module-checkbox {
+
+}
+
+.module-checkbox__input {
+
+}
+
+.form__textarea {
+  @include input-style;
+  font-weight: bold;
+  color: black;
+
+  resize: none;
+}
+
+.form__textarea::placeholder {
+  color: black;
+}
+
+.form__submit {
+  @include blue-block;
+  @include big-title-style;
+  border: none;
+  cursor: pointer;
+}

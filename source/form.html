@@ -46,83 +46,93 @@
         <p class="form__description">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
         <form class="form__rewiew" method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__module module-name">
-            <legend class="form__legent">представьтесь:</legend>
-            <p class="form__body">
-              <label class="form__label--text">
-                имя*:<input class="module-name__input" type="text" name="name" placeholder="Петр">
-              </label>
-            </p>
-            <p class="form__body">
-              <label class="form__label--text">
-                фамилия*:<input class="module-name__input" type="text" name="surname" placeholder="Иванов">
-              </label>
-            </p>
-            <p class="form__body">
-              <label class="form__label--text">
-                отчество:<input class="module-name__input" type="text" name="patronymic" placeholder="Александрович">
-              </label>
-            </p>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__module module-name">
+              <legend class="form__legent">представьтесь:</legend>
+              <p class="form__body">
+                <label class="form__label--text">
+                  имя*:<input class="module-name__input" type="text" name="name" placeholder="Петр">
+                </label>
+              </p>
+              <p class="form__body">
+                <label class="form__label--text">
+                  фамилия*:<input class="module-name__input" type="text" name="surname" placeholder="Иванов">
+                </label>
+              </p>
+              <p class="form__body">
+                <label class="form__label--text">
+                  отчество:<input class="module-name__input" type="text" name="patronymic" placeholder="Александрович">
+                </label>
+              </p>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__module module-contacts">
-            <legend class="form__legent">контактная информация:</legend>
-            <p class="form__body">
-              <label class="form__label--text">
-                контактный телефон*:<input class="module-contacts__input"  type="tel" name="tel" placeholder="Введите телефон">
-              </label>
-            </p>
-            <p class="form__body">
-              <label class="form__label--text">
-                электронная почта*:<input class="module-contacts__input" type="email" name="email" placeholder="Введите e-mail">
-              </label>
-            </p>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__module module-contacts">
+              <legend class="form__legent">контактная информация:</legend>
+              <p class="form__body">
+                <label class="form__label--text">
+                  контактный телефон*:<input class="module-contacts__input"  type="tel" name="tel" placeholder="Введите телефон">
+                </label>
+              </p>
+              <p class="form__body">
+                <label class="form__label--text">
+                  электронная почта*:<input class="module-contacts__input" type="email" name="email" placeholder="Введите e-mail">
+                </label>
+              </p>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__module module-radio">
-            <legend class="form__legent">ваше общее впечатление:</legend>
-            <p class="form__body">
-              <input class="module-radio__input" name="radio" value="positively" type="radio" id="positively" checked>
-              <label class="form__label--check" for="positively">Скорее положительное</label>
-            </p>
-            <p class="form__body">
-              <input class="module-radio__input" name="radio" value="negatively" type="radio" id="negatively">
-              <label class="form__label--check" for="negatively">Скорее отрицательное</label>
-            </p>
-            <p class="form__body">
-              <input class="module-radio__input" name="radio" value="nothing" type="radio" id="nothing">
-              <label class="form__label--check" for="nothing">Затрудняюсь ответить</label>
-            </p>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__module module-radio">
+              <legend class="form__legent">ваше общее впечатление:</legend>
+              <p class="form__body">
+                <input class="module-radio__input" name="radio" value="positively" type="radio" id="positively" checked>
+                <label class="form__label--check" for="positively">Скорее положительное</label>
+              </p>
+              <p class="form__body">
+                <input class="module-radio__input" name="radio" value="negatively" type="radio" id="negatively">
+                <label class="form__label--check" for="negatively">Скорее отрицательное</label>
+              </p>
+              <p class="form__body">
+                <input class="module-radio__input" name="radio" value="nothing" type="radio" id="nothing">
+                <label class="form__label--check" for="nothing">Затрудняюсь ответить</label>
+              </p>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__module module-checkbox">
-            <legend class="form__legent">посещаемые достопримечательности:</legend>
-            <p class="form__body">
-              <input class="module-checkbox__input" type="checkbox" name="checkbox" value="most" id="most" checked>
-              <label class="form__label--check" for="most">Мост Дъявола</label>
-            </p>
-            <p class="form__body">
-              <input class="module-checkbox__input" type="checkbox" name="checkbox" value="mountain" id="mountain" checked>
-              <label class="form__label--check" for="mountain">Гора-Колокол</label>
-            </p>
-            <p class="form__body">
-              <input class="module-checkbox__input" type="checkbox" name="checkbox" value="park" id="park" checked>
-              <label class="form__label--check" for="park">Слайд-Парк</label>
-            </p>
-            <p class="form__body">
-              <input class="module-checkbox__input" type="checkbox" name="checkbox" value="rock" id="rock">
-              <label class="form__label--check" for="rock">Красные скалы</label>
-            </p>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__module module-checkbox">
+              <legend class="form__legent">посещаемые достопримечательности:</legend>
+              <p class="form__body">
+                <input class="module-checkbox__input" type="checkbox" name="checkbox" value="most" id="most" checked>
+                <label class="form__label--check" for="most">Мост Дъявола</label>
+              </p>
+              <p class="form__body">
+                <input class="module-checkbox__input" type="checkbox" name="checkbox" value="mountain" id="mountain" checked>
+                <label class="form__label--check" for="mountain">Гора-Колокол</label>
+              </p>
+              <p class="form__body">
+                <input class="module-checkbox__input" type="checkbox" name="checkbox" value="park" id="park" checked>
+                <label class="form__label--check" for="park">Слайд-Парк</label>
+              </p>
+              <p class="form__body">
+                <input class="module-checkbox__input" type="checkbox" name="checkbox" value="rock" id="rock">
+                <label class="form__label--check" for="rock">Красные скалы</label>
+              </p>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__module">
-            <legend class="form__legent">опишите свои эмоции:</legend>
-            <p class="form__body">
-              <textarea class="form__textarea" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
-            </p>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__module">
+              <legend class="form__legent">опишите свои эмоции:</legend>
+              <p class="form__body">
+                <textarea class="form__textarea" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+              </p>
+            </fieldset>
+          </div>
 
-          <button type="submit">отправить отзыв</button>
+          <button class="form__submit" type="submit">отправить отзыв</button>
         </form>
       </section>
 
