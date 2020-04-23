@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -20,13 +22,13 @@
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--left">
               <a class="site-list__link" href="foto.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--right">
               <a class="site-list__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--right">
               <a class="site-list__link" href="#">html academy</a>
             </li>
           </ul>
@@ -44,25 +46,28 @@
       <section class="advantages">
         <h2 class="advantages__title">Седона - небольшой городок в Аризоне заслуживающий большего!</h2>
         <p class="advantages__main-description">рассмотрим 5 причин, по которым седона круче, чем гранд коньон!</p>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--city">
-            <div class="advantages__description--blue-bg">
-              <h3 class="advantages__item-title">настоящий городок</h3>
-              <p class="advantages__number">№1</p>
-              <p class="advantages__expl">седона - не аттракцион для туристов, тут течет своя жизнь</p>
+
+        <ul class="advantages__main-list">
+          <li class="advantages__item">
+            <div class="advantages__item--city">
+              <div class="advantages__description--blue-bg">
+                <h3 class="advantages__item-title">настоящий городок</h3>
+                <p class="advantages__number">№1</p>
+                <p class="advantages__expl">седона - не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="фото деревянной постройки с красной крушей, в правом нижнем углу куст, в левом верхнем развиваются флаги">
             </div>
-            <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="фото деревянной постройки с красной крушей, в правом нижнем углу куст, в левом верхнем развиваются флаги">
 
             <ul class="advantages__list-description">
-              <li class="advantages__item-description">
+              <li class="advantages__item-description advantages__item-description--housing">
                 <h4 class="advantages__title-description">жилье</h4>
                 <p class="advantages__expl-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item-description">
+              <li class="advantages__item-description advantages__item-description--souvenirs">
                 <h4 class="advantages__title-description">сувениры</h4>
-                <p class="advantages__expl-description">Не только китайского, но и местного производства!</p>
+                <p class="advantages__expl-description">Не только китайского,<br> но и местного производства!</p>
               </li>
-              <li class="advantages__item-description">
+              <li class="advantages__item-description advantages__item-description--food">
                 <h4 class="advantages__title-description">еда</h4>
                 <p class="advantages__expl-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
               </li>
@@ -77,26 +82,26 @@
             </div>
             <img class="advantages__image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="мост из красной скальной породы на фоне красных горных образований и зеленой долины">
           </li>
+        </ul>
 
-          <li class="advantages__item advantages__item--grey-bg advantages__item--area">
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--grey-bg">
             <div class="advantages__description">
-              <h3 class="advantages__item-title">небольшая площадь</h3>
+              <h3 class="advantages__item-title advantages__item-title--grey-bg">небольшая площадь</h3>
               <p class="advantages__number">№3</p>
               <p class="advantages__expl--dark-grey">все интересные места находятся очень близко</p>
             </div>
           </li>
-
-          <li class="advantages__item advantages__item--grey-bg advantages__item--road">
+          <li class="advantages__item advantages__item--grey-bg">
             <div class="advantages__description">
-              <h3 class="advantages__item-title">красивая дорога</h3>
+              <h3 class="advantages__item-title advantages__item-title--grey-bg">красивая дорога</h3>
               <p class="advantages__number">№4</p>
               <p class="advantages__expl--dark-grey">ехать в седону из лас-вегаса совсем не скучно!</p>
             </div>
           </li>
-
-          <li class="advantages__item advantages__item--grey-bg advantages__item--tourists">
-            <div class="advantages__description">
-              <h3 class="advantages__item-title">мало туристов</h3>
+          <li class="advantages__item advantages__item--grey-bg">
+            <div class="advantages__description advantages__description--no-border">
+              <h3 class="advantages__item-title advantages__item-title--grey-bg">мало туристов</h3>
               <p class="advantages__number">№5</p>
               <p class="advantages__expl--dark-grey">большинство едет в гранд каньон и толпится там</p>
             </div>

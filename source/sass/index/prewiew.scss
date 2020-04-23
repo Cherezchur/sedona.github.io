@@ -1,11 +1,34 @@
 .prewiew {
-
-}
-
-.prewiew__image {
-
+  width: 320px;
+  margin: 0 auto;
 }
 
 .prewiew__landscape {
-  @include bg-prewiew;
+  @include bg-prewiew-mobile;
+}
+
+.prewiew__image {
+  margin-top: 90px;
+}
+
+@media (min-width: $tablet-width) {
+  .prewiew {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .prewiew__landscape {
+    @include bg-prewiew-tablet;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .prewiew {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .prewiew__landscape {
+    @include bg-prewiew-desctop;
+  }
 }
