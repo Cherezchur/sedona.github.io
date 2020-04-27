@@ -1,12 +1,96 @@
 .prewiew-min {
-
+  margin: 0 auto;
+  width: 320px;
+  background-color: burlywood;
 }
 
 .prewiew-min__landscape {
-  @include bg-prewiew;
+  @include bg-prewiew-mobile;
   background-color: lightskyblue;
+
+  margin: 0 auto;
+  height: 158px;
+}
+
+.prewiew-min__triangle {
+  position: relative;
+  height: 0;
+  margin-top: -26px;
+}
+
+.prewiew-min__triangle::after {
+  content: "";
+  height: 26px;
+  width: 320px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 .prewiew-min__image {
+  margin-top: 52px;
+}
 
+//------------------styles-for-tablet------------------------//
+
+@media (min-width: $tablet-width) {
+  .prewiew-min {
+    width: 768px;
+  }
+
+  .prewiew-min__landscape {
+    @include bg-prewiew-tablet;
+    height: 290px;
+  }
+
+  .prewiew-min__triangle {
+    margin-top: -57px;
+  }
+
+  .prewiew-min__triangle::after {
+    content: "";
+    height: 57px;
+    width: 768px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+//--------------------------styles-for-desktop----------------------//
+
+@media (min-width: $desktop-width) {
+  .prewiew-min {
+    width: 1200px;
+  }
+
+  .prewiew-min__landscape {
+    @include bg-prewiew-desktop;
+    height: 301px;
+  }
+
+  .prewiew-min__triangle {
+    margin-top: -57px;
+  }
+
+  .prewiew-min__triangle::after {
+    content: "";
+    height: 57px;
+    width: 1200px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+  }
 }
