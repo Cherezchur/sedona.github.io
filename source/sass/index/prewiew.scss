@@ -22,13 +22,13 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .prewiew {
     width: 1200px;
     margin: 0 auto;
   }
 
   .prewiew__landscape {
-    @include bg-prewiew-desctop;
+    @include bg-prewiew-desktop;
   }
 }
