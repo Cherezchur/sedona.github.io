@@ -28,6 +28,20 @@
 
 }
 
+.main-nav--closed .page-header__button::before {
+  content: "";
+
+  position: absolute;
+  left: 277px;
+  top: 17px;
+
+  width: 23px;
+  height: 4px;
+  background-color: $light-grey-blue;
+
+  box-shadow: 0 4px 0 0 $light-grey-blue, 0 4px 0 0 $light-grey-blue;
+}
+
 .main-nav {
 
 }
