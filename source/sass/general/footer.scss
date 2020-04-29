@@ -1,4 +1,5 @@
 .page-footer {
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -20,34 +21,52 @@
 }
 
 .social {
-
+  height: 48px;
 }
 
-.social-list {
+.social__list {
   @include list-style;
 
   display: flex;
   justify-content: center;
 }
 
-.social-item {
+.social__item {
   padding-right: 6px;
 }
 
-.socail-link {
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 48px;
+
   background-color: $light-grey-blue;
 
-  &--twitter {
-
+  path {
+    fill: white;
   }
 
-  &--facebook {
-
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
   }
 
-  &--youtube {
-
+  &:active {
+    background-color: #5496bd;
   }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+}
+
+.social__sign,
+.copyrigth__sign {
+  @include visually-hidden;
 }
 
 .page-footer__copyright {
@@ -55,20 +74,33 @@
 }
 
 .copyright {
-
+  display: flex;
+  justify-content: center;
 }
 
 .copyright__discription {
-
+  padding-bottom: 10px;
+  margin-right: 10px;
 }
 
 .copyrigth__link {
+  margin-top: 10px;
 
+  &:hover path,
+  &:focus path {
+    fill: $light-grey-blue;
+  }
+
+  &:active path {
+    fill: #b4b4b4;
+  }
 }
 
 .copyrigth__image {
 
 }
+
+//--------------------styles-for-tablet
 
 @media (min-width: $tablet-width) {
   .page-footer {
@@ -81,6 +113,8 @@
     align-items: center;
   }
 }
+
+//--------------------styles-for-desctop
 
 @media (min-width: $desktop-width) {
   .page-footer {

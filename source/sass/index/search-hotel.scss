@@ -1,13 +1,17 @@
 .search-hotel {
-
+  margin: 0 auto;
+  width: 320px;
 }
 
 .search-hotel__title {
   @include big-title-style;
+  padding-top: 17px;
 }
 
 .search-hotel__discription {
   color: $dark-grey;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .search-hotel__button {
@@ -15,6 +19,10 @@
   height: 58px;
   @include blue-block;
   border: none;
+
+  margin-top: 40px;
+  margin-bottom: 49px;
+
   font-weight: 700;
 
   @include big-title-style;
@@ -28,3 +36,53 @@
 .searcy-hotel__image-map {
   background-color: lightgray;
 }
+
+@media (min-width: $tablet-width) {
+  .search-hotel {
+    width: $tablet-width;
+  }
+
+  .search-hotel__title {
+    font-size: 30px;
+  }
+
+  .search-hotel__discription {
+    color: $dark-grey;
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  .search-hotel__button {
+    width: 458px;
+  }
+
+  .search-hotel__wrapper-map {
+    width: $tablet-width;
+    height: 350px;
+  }
+
+  .searcy-hotel__image-map {
+    width: $tablet-width;
+    height: 350px;
+  }
+}
+
+//--------------------------styles-for-desktop
+
+@media (min-width: $desktop-width) {
+  .search-hotel {
+    width: $desktop-width;
+  }
+
+  .search-hotel__wrapper-map {
+    width: $desktop-width;
+    height: 350px;
+  }
+
+  .searcy-hotel__image-map {
+    width: $desktop-width;
+    height: 350px;
+  }
+
+}
+
