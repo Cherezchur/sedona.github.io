@@ -2,28 +2,43 @@
   width: 320px;
   margin: 0 auto;
 
-  margin-top: 63px;
+  margin-top: 65px;
 }
 
 .advantages__title {
   @include title-style;
   margin-top: 45px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .advantages__main-description {
   line-height: 26px;
   color: $dark-grey;
 
-  margin-top: 25px;
-  margin-bottom: 45px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 28px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .advantages__main-list {
   @include list-style;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 320px;
+    height: 37px;
+
+    position: absolute;
+    top: -20px;
+    left: 0;
+
+    background-image: url("../img/bg-triangle.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__item {
@@ -45,16 +60,23 @@
 }
 
 .advantages__description {
-  margin-left: 20px;
-  margin-right: 20px;
 
-  border-bottom: 1px solid $border-color;
+  &--first {
+    height: 209px;
+  }
 
   &--blue-bg {
     @include blue-block;
 
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  &--grey {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    border-bottom: 1px solid $border-color;
   }
 
   &--no-border {
@@ -65,7 +87,7 @@
 .advantages__item-title {
   @include title-style;
   margin: 0 auto;
-  padding-top: 41px;
+  padding-top: 57px;
 
   &--grey-bg {
     padding-top: 31px;
@@ -73,10 +95,42 @@
 }
 
 .advantages__number {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 10px;
 
+  &::before,
+  &::after {
+    content: "";
+    width: 8px;
+    height: 2px;
+
+    background-color: white;
+  }
+
+  &::before {
+    position: absolute;
+    left: 116px;
+    top: 10px;
+  }
+
+  &::after {
+    position: absolute;
+    left: 157px;
+    top: 10px;
+  }
+
+  &--grey {
+
+    &::before,
+    &::after {
+    background-color: $dark-grey;
+    }
+  }
 }
 
 .advantages__expl {
+  margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 43px;
 
