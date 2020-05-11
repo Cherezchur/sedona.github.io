@@ -1,8 +1,8 @@
-//переменная для толстого шрифта
-$font-bold: ("PT Sans Bold", "Arial Bold", sans-serif);
+//переменная для шрифта
+$mane-font: ("PT Sans", "Arial", sans-serif);
 
 //перемнные цветов
-$light-grey-blue: #81b3d2;
+$light-grey-blue: rgba(129, 179, 210, 1);
 $dark-grey: #333333;
 $border-color: #949494;
 $form-grey: #f2f2f2;
@@ -10,3 +10,4 @@ $form-grey: #f2f2f2;
 //переменные для экранов
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$mobile-width-only: 767px;
