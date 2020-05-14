@@ -50,10 +50,6 @@
   &--bridge {
     height: 450px;
 
-    & .advantages__description {
-      height: 190px;
-    }
-
     img {
       height: 260px;
     }
@@ -85,6 +81,10 @@
     padding-right: 20px;
   }
 
+  &--bridge {
+    height: 190px;
+  }
+
   &--grey {
     margin-left: 20px;
     margin-right: 20px;
@@ -109,8 +109,9 @@
 
 .advantages__number {
   position: relative;
-  margin-top: 8px;
-  margin-bottom: 10px;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 12px;
 
   &::before,
   &::after {
@@ -124,13 +125,13 @@
   &::before {
     position: absolute;
     left: 116px;
-    top: 10px;
+    top: 18px;
   }
 
   &::after {
     position: absolute;
     left: 157px;
-    top: 10px;
+    top: 18px;
   }
 
   &--grey {
@@ -150,7 +151,7 @@
   &--dark-grey {
     @include font-description;
 
-    padding-bottom: 32px;
+    padding-bottom: 28px;
     margin: 0 auto;
   }
 }
@@ -176,6 +177,7 @@
 
   svg {
     position: absolute;
+    fill: $light-grey-blue;
   }
 
   &--housing svg {
@@ -229,20 +231,28 @@
   .advantages {
     width: 768px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 108px;
   }
 
   .advantages__title {
     width: 500px;
     margin: 0 auto;
-    margin-top: 45px;
+
+    font-size: 21px;
   }
 
   .advantages__main-description {
     width: 500px;
     margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 45px;
+    margin-top: 27px;
+    margin-bottom: 50px;
+  }
+
+  .advantages__main-list {
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__item {
@@ -270,8 +280,36 @@
 
     &--blue-bg {
       width: 216px;
+      height: 256px;
+    }
+
+    &--first .advantages__item-title {
+      padding-top: 45px;
     }
   }
+
+  .advantages__number {
+    padding-bottom: 18px;
+
+    &::before,
+    &::after {
+    }
+
+    &::before {
+      position: absolute;
+      left: 116px;
+      top: 18px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 157px;
+      top: 18px;
+    }
+
+    &--grey {
+      }
+    }
 
   .advantages__image {
     width: 512px;
@@ -279,6 +317,7 @@
 
   .advantages__item-title {
     width: 155px;
+    font-size: 21px;
   }
 
   .advantages__list-description {

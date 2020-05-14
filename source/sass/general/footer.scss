@@ -14,6 +14,8 @@
 .page-footer__hash-tag {
   font-weight: 700;
   font-size: 21px;
+
+  padding-top: 14px;
 }
 
 .page-footer__social {
@@ -69,18 +71,15 @@
   @include visually-hidden;
 }
 
-.page-footer__copyright {
-
-}
-
 .copyright {
   display: flex;
   justify-content: center;
 }
 
 .copyright__discription {
-  padding-bottom: 10px;
-  margin-right: 10px;
+  margin: 0;
+  padding-right: 10px;
+  padding-top: 12px;
 }
 
 .copyrigth__link {
