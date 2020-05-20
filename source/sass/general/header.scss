@@ -10,13 +10,17 @@
 
 .page-header__logo {
   position: absolute;
-  left: 110px;
+  left: 68px;
   top: 224px;
 }
 
-.page-header__logo-image {
+.page-header__logo-tablet {
+   display: none;
+ }
 
-}
+ .page-header__logo-desktop {
+   display: none;
+ }
 
 .main-nav__toggle {
   width: 1px;
@@ -207,7 +211,11 @@
 
   .page-header__logo {
     top: 0;
-    left: 333px;
+    left: 290px;
+  }
+
+  .page-header__logo-tablet {
+    display: inline-block;
   }
 
   .main-nav__toggle {
@@ -276,7 +284,11 @@
 
   .page-header__logo {
     top: 0;
-    left: 547px;
+    left: 505px;
+  }
+
+  .page-header__logo-desktop {
+    display: inline-block;
   }
 
   .site-list__item {

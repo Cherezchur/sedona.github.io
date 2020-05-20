@@ -31,30 +31,6 @@
   color: $dark-grey;
 }
 
-@mixin bg-prewiew-mobile {
-  height: 389px;
-
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-@mixin bg-prewiew-tablet {
-  height: 518px;
-
-  background-image: url("../img/bg-back-tablet@1x.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-@mixin bg-prewiew-desktop {
-  height: 518px;
-
-  background-image: url("../img/bg-back-desktop@1x.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
 @mixin input-style {
   @include title-style;
   background-color: $form-grey;
