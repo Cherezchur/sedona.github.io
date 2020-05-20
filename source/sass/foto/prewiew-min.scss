@@ -5,7 +5,16 @@
 }
 
 .prewiew-min__landscape {
-  @include bg-prewiew-mobile;
+  height: 290px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   background-color: lightskyblue;
 
   margin: 0 auto;
@@ -43,8 +52,15 @@
   }
 
   .prewiew-min__landscape {
-    @include bg-prewiew-tablet;
     height: 290px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .prewiew-min__triangle {
@@ -73,8 +89,15 @@
   }
 
   .prewiew-min__landscape {
-    @include bg-prewiew-desktop;
     height: 301px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .prewiew-min__triangle {

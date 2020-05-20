@@ -10,7 +10,11 @@
   <body>
     <header class="page-header page-header--nojs">
       <a class="page-header__logo">
-        <img src="img/logo-sedona-adaptive.svg" style="width: 100%">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седоны" width="100%">
+        </picture>
       </a>
 
       <nav class="main-nav">
