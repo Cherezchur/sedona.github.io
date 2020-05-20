@@ -14,6 +14,14 @@
   top: 224px;
 }
 
+.page-header__logo-tablet {
+   display: none;
+ }
+
+ .page-header__logo-desktop {
+   display: none;
+ }
+
 .main-nav__toggle {
   width: 1px;
   height: 1px;
@@ -206,6 +214,10 @@
     left: 290px;
   }
 
+  .page-header__logo-tablet {
+    display: inline-block;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -273,6 +285,10 @@
   .page-header__logo {
     top: 0;
     left: 505px;
+  }
+
+  .page-header__logo-desktop {
+    display: inline-block;
   }
 
   .site-list__item {
