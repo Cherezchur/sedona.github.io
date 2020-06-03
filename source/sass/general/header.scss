@@ -3,31 +3,32 @@
   flex-direction: column;
 
   position: relative;
-
-  width: 320px;
   margin: 0 auto;
 }
 
 .page-header__logo {
   position: absolute;
-  left: 110px;
+  left: calc(50% - 51px);
   top: 224px;
 }
 
 .page-header__logo-tablet {
    display: none;
- }
+}
 
- .page-header__logo-desktop {
+.page-header__logo-desktop {
    display: none;
- }
+}
 
 .main-nav__toggle {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  left: 90%;
+
+  border: 0;
+  outline: none;
   cursor: pointer;
 
   &::after,
@@ -35,7 +36,7 @@
     content: "";
 
     position: absolute;
-    left: 287px;
+    left: 90%;
     top: 15px;
 
     width: 4px;
@@ -66,7 +67,6 @@
 }
 
 .main-nav {
-
 }
 
 .main-nav__wrapper {
@@ -102,7 +102,7 @@
 .site-list__item {
   display: flex;
 
-  width: 320px;
+  width: 100%;
   height: 54px;
 
   border-top: 1px solid #a3c7dd;
@@ -118,7 +118,7 @@
   @include blue-block;
 
   padding-top: 8px;
-  width: 320px;
+  width: 100%;
 
   &--shadow {
     box-shadow: inset 0 -4px 4px -2px rgba(0, 0, 0, 0.4);
@@ -131,13 +131,7 @@
   .page-header {
 
     &--closed {
-      display: flex;
-      flex-direction: column;
 
-      position: relative;
-
-      width: 320px;
-      margin: 0 auto;
     }
 
     &--closed .main-nav__wrapper {
@@ -146,7 +140,6 @@
 
     &--closed .page-header__logo {
       position: absolute;
-      left: 110px;
       top: 0;
     }
 
@@ -154,16 +147,19 @@
       width: 23px;
       height: 20px;
       border: 0;
-      margin-top: 15px;
-      margin-left: 256px;
+
+      margin: 0;
+      margin-top: 17px;
       margin-bottom: 22px;
+      margin-left: 90%;
+      margin-right: 10%;
       background-color: white;
 
       &::before {
         content: "";
 
         position: absolute;
-        left: 277px;
+        left: 90%;
         top: 17px;
 
         width: 23px;
@@ -192,7 +188,7 @@
     }
 
     &--nojs .main-nav__toggle {
-        display: none;
+      display: none;
     }
 
     &--nojs .main-nav__wrapper {
@@ -205,13 +201,11 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 768px;
     margin: 0 auto;
   }
 
   .page-header__logo {
     top: 0;
-    left: 330px;
   }
 
   .page-header__logo-tablet {
@@ -278,17 +272,12 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1200px;
     margin: 0 auto;
   }
 
   .page-header__logo {
     top: 0;
-    left: 505px;
-  }
-
-  .page-header__logo-desktop {
-    display: inline-block;
+    left: calc(50% - 93.5px);
   }
 
   .site-list__item {
