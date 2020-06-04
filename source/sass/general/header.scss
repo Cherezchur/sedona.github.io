@@ -224,7 +224,7 @@
     min-height: 56px;
 
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-around;
 
     & a[href] {
 
@@ -250,7 +250,7 @@
     border: none;
 
     &--left {
-      padding-right: 150px;
+      padding-right: 19%;
     }
   }
 
