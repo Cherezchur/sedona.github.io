@@ -30,10 +30,9 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
+    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/bg-back-tablet@2x.jpg");
     }
-  }
 
   .prewiew__image {
     margin-top: 75px;
@@ -53,7 +52,7 @@
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 }
