@@ -1,5 +1,4 @@
 .page-footer {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -94,8 +93,12 @@
 //--------------------styles-for-tablet
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    width: 768px;
+
+  .page-footer__wrapper {
+    width: 86%;
+    margin: 0 auto;
+
+    justify-content: space-between;
   }
 
   .page-footer__hash-tag {
@@ -120,9 +123,6 @@
 //--------------------styles-for-desctop
 
 @media (min-width: $desktop-width) {
-  .page-footer {
-    width: $desktop-width;
-  }
 
   .page-footer__hash-tag {
     margin-left: -12px;

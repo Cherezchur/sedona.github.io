@@ -9,7 +9,7 @@
 }
 
 .gallery__description {
-  width: 280px;
+  width: 72%;
 
   margin: 0 auto;
   margin-bottom: 28px;
@@ -39,11 +39,12 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  width: 280px;
+  width: 86%;
 }
 
 .gallery__image {
   object-fit: cover;
+  width: 100%;
 
   &--spaces {
     background-color: goldenrod;
@@ -101,9 +102,9 @@
 
 @media (min-width: $tablet-width) {
   .gallery {
-    width: $tablet-width;
     margin: 0 auto;
-
+    margin-left: 8.5%;
+    margin-right: 8.5%;
   }
 
   .gallery__title {
@@ -124,32 +125,33 @@
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-
-    width: 648px;
   }
 
   .gallery__item {
     margin: 0;
     border: none;
+    width: 50%;
 
     &:first-child {
       border: none;
       flex-grow: 1;
+
+      width: 100%;
     }
   }
 
   .gallery__wrapper {
     margin: 0 auto;
     padding: 0;
-    width: 324px;
+    width: 100%;
 
     &--first {
-       width: 648px;
+       width: 100%;
     }
   }
 
   .gallery__image {
-    width: 324px;
+    width: 100%;
 
     &--first {
       width: 100%;
@@ -186,7 +188,7 @@
 
 @media (min-width: $desktop-width) {
   .gallery {
-    width: $desktop-width;
+    width: 100;
     margin: 0 auto;
   }
 
@@ -202,7 +204,7 @@
     height: 267px;
 
     &--first {
-      width: $desktop-width;
+      // width: $desktop-width;
       height: 400px;
     }
   }
@@ -228,7 +230,7 @@
 
     &--first {
       top: 329px;
-      width: 1160px;
+      // width: 1160px;
     }
   }
 
