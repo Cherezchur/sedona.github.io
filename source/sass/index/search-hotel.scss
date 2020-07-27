@@ -1,15 +1,18 @@
 .search-hotel {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
 }
 
 .search-hotel__title {
   @include big-title-style;
-  padding-top: 17px;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .search-hotel__discription {
   color: $dark-grey;
+  margin: 0;
+  padding-top: 20px;
   padding-left: 13px;
   padding-right: 13px;
 }
@@ -20,69 +23,105 @@
   @include blue-block;
   border: none;
 
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 49px;
 
   font-weight: 700;
 
   @include big-title-style;
   text-transform: uppercase;
+
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active {
+    color: rgba(129, 179, 210, 0.3);
+  }
 }
 
 .search-hotel__wrapper-map {
+  position: relative;
+  margin: 0;
 
+  &::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 161px;
+    left: 146px;
+
+    background-color: $light-grey-blue;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+
+  & iframe {
+    height: 350px;
+    width: 100%;
+  }
 }
 
 .searcy-hotel__image-map {
   background-color: lightgray;
 }
 
+//-------------------------------styles-for-tablet-------------------------------------
+
 @media (min-width: $tablet-width) {
-  .search-hotel {
-    width: $tablet-width;
-  }
 
   .search-hotel__title {
     font-size: 30px;
+    padding-top: 72px;
   }
 
   .search-hotel__discription {
     color: $dark-grey;
     width: 440px;
     margin: 0 auto;
+    padding-top: 30px;
   }
 
   .search-hotel__button {
     width: 458px;
+    margin-top: 42px;
+    margin-bottom: 58px;
   }
 
   .search-hotel__wrapper-map {
-    width: $tablet-width;
     height: 350px;
-  }
 
-  .searcy-hotel__image-map {
-    width: $tablet-width;
-    height: 350px;
+    & iframe {
+      height: 350px;
+    }
   }
 }
 
 //--------------------------styles-for-desktop
 
 @media (min-width: $desktop-width) {
-  .search-hotel {
-    width: $desktop-width;
+
+  .search-hotel__title {
+    padding-top: 92px;
+  }
+
+  .search-hotel__button {
+    width: 458px;
+    margin-top: 48px;
+    margin-bottom: 65px;
   }
 
   .search-hotel__wrapper-map {
-    width: $desktop-width;
     height: 350px;
   }
-
-  .searcy-hotel__image-map {
-    width: $desktop-width;
-    height: 350px;
-  }
-
 }
 

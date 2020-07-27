@@ -1,31 +1,31 @@
 .video {
-  width: 320px;
   margin: 0 auto;
-  padding-top: 35px;
-  margin-bottom: 105px;
+  margin-bottom: 50px;
+  padding-top: 33px;
 }
 
 .video__title {
   @include title-style;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .video__description {
-  padding-left: 22px;
-  padding-right: 22px;
-  margin-bottom: 30px;
+  width: 72%;
+  margin: auto;
+  margin-bottom: 35px;
 }
 
 .video__video-player {
   margin: 0 auto;
-  background-color: lightsteelblue;
-  height: 200px;
+  width: 100%;
 }
 
 .video__image {
-  width: 320px;
-  height: 201px;
+  width: 100%;
+  object-fit: cover;
+
+  background-color: lightsteelblue;
 }
 
 .video__controls {
@@ -34,7 +34,7 @@
 
   margin: 0 auto;
   margin-top: -7px;
-  width: 280px;
+  width: 86%;
 
   background-color: $form-grey;
 }
@@ -44,7 +44,7 @@
   top: -45px;
   left: 0;
 
-  width: 280px;
+  width: 100%;
   height: 45px;
 
   background-color: rgba(0, 0, 0, 0.5);
@@ -53,11 +53,11 @@
     content: "";
 
     position: absolute;
-    width: 235px;
+    width: 84%;
     height: 3px;
 
     top: 20px;
-    left: 22px;
+    left: 8%;
 
     background-color: rgba(255, 255, 255, 0.5);
   }
@@ -70,7 +70,7 @@
     height: 9px;
 
     top: 17px;
-    left: 58px;
+    left: 21%;
 
     background-color: rgba(255, 255, 255, 1);
     border-radius: 50%;
@@ -82,8 +82,8 @@
   width: 26;
   height: 20px;
 
-  margin-left: 25px;
-  margin-top: 22px;
+  left: 8%;
+  top: 22px;
 
   path {
     opacity: 0.7;
@@ -101,9 +101,10 @@
 
 .video__rigth-control {
   position: absolute;
+  width: 83px;
 
-  margin-left: 174px;
-  margin-top: 22px;
+  left: calc(92% - 83px);
+  top: 22px;
 
   path,
   polygon {
@@ -131,7 +132,6 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    width: 768px;
     margin-bottom: 30px;
     margin-top: 45px;
   }
@@ -141,51 +141,49 @@
   }
 
   .video__description {
-    width: 420px;
     margin: 0 auto;
     margin-bottom: 75px;
   }
 
   .video__video-player {
-    width: 648px;
+    width: 86%;
     height: 500px;
   }
 
   .video__image {
-    width: 648px;
     height: 500px;
   }
 
   .video__controls {
     height: 0px;
-    width: 648px;
+    width: 100%;
   }
 
   .video__progress-control {
     top: -93px;
     left: 0px;
 
-    width: 648px;
+    width: 100%;
     height: 93px;
 
     &:after {
-      width: 389px;
+      width: 60%;
       height: 3px;
 
       top: 46px;
-      left: 93px;
+      left: 14%;
     }
 
     &:before {
       top: 42px;
-      left: 206px;
+      left: 31.5%;
     }
   }
 
   .video__replay-control {
     position: absolute;
     top: -58px;
-    left: 35px;
+    left: 5%;
 
     width: 26;
     height: 20px;
@@ -210,7 +208,7 @@
   .video__rigth-control {
     margin: 0;
     top: -56px;
-    right: 41px;
+    right: 5%;
 
     path,
     polygon {

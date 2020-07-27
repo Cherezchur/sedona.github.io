@@ -1,21 +1,29 @@
 .prewiew-min {
   margin: 0 auto;
-  width: 320px;
   background-color: burlywood;
 }
 
 .prewiew-min__landscape {
-  @include bg-prewiew-mobile;
+  height: 158px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: 25% 90%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   background-color: lightskyblue;
 
   margin: 0 auto;
-  height: 158px;
 }
 
 .prewiew-min__triangle {
   position: relative;
   height: 0;
-  margin-top: -26px;
+  margin-top: -25px;
 }
 
 .prewiew-min__triangle::after {
@@ -25,7 +33,7 @@
 
   position: absolute;
   top: 0;
-  left: 0;
+  left: calc(50% - 160px);
 
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
@@ -38,17 +46,22 @@
 //------------------styles-for-tablet------------------------//
 
 @media (min-width: $tablet-width) {
-  .prewiew-min {
-    width: 768px;
-  }
 
   .prewiew-min__landscape {
-    @include bg-prewiew-tablet;
     height: 290px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    background-position: 25% 90%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .prewiew-min__triangle {
-    margin-top: -57px;
+    margin-top: -56px;
   }
 
   .prewiew-min__triangle::after {
@@ -58,27 +71,39 @@
 
     position: absolute;
     top: 0;
-    left: 0;
+    left: calc(50% - 384px);
 
     background-image: url("../img/bg-intro-triangle-tablet.svg");
     background-repeat: no-repeat;
+  }
+
+  .prewiew-min__image {
+    margin-top: 95px;
+
+    width: 458px;
+    height: 78px;
   }
 }
 
 //--------------------------styles-for-desktop----------------------//
 
 @media (min-width: $desktop-width) {
-  .prewiew-min {
-    width: 1200px;
-  }
 
   .prewiew-min__landscape {
-    @include bg-prewiew-desktop;
     height: 301px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+    background-position: 25% 100%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .prewiew-min__triangle {
-    margin-top: -57px;
+    margin-top: -56px;
   }
 
   .prewiew-min__triangle::after {
@@ -88,7 +113,7 @@
 
     position: absolute;
     top: 0;
-    left: 0;
+    left: calc(50% - 600px);
 
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     background-repeat: no-repeat;
