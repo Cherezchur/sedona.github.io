@@ -39,6 +39,7 @@
 }
 
 .form__list {
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -46,6 +47,7 @@
   position: relative;
 
   @include list-style;
+  margin: 0 auto;
 
   &--radio {
     margin-top: 43px;
@@ -117,7 +119,7 @@
 
   &--check {
     padding: 0;
-    padding-left: 100px;
+    padding-left: 80px;
     @include title-style;
     text-transform: none;
     font-weight: bold;
@@ -131,7 +133,12 @@
   padding: 0;
   flex-grow: 1;
 
-  &--text {
+  &--name {
+    width: 1px;
+  }
+
+  &--text,
+  &--name {
     height: 58px;
     padding-left: 22px;
   }
@@ -160,7 +167,7 @@
   &--radio::after {
     content: "";
     position: absolute;
-    left: 20px;
+    // left: 20px;
     top: -15px;
     width: 56px;
     height: 56px;
@@ -172,7 +179,7 @@
     content: "";
     position: absolute;
     z-index: 2;
-    left: 38px;
+    left: 18px;
     top: 3px;
     width: 20px;
     height: 20px;
@@ -192,7 +199,6 @@
   &--checkbox::after {
     content: "";
     position: absolute;
-    left: 20px;
     top: -15px;
     width: 56px;
     height: 56px;
@@ -204,7 +210,7 @@
     content: "";
     position: absolute;
     z-index: 2;
-    left: 38px;
+    left: 18px;
     top: 3px;
     width: 20px;
     height: 20px;
