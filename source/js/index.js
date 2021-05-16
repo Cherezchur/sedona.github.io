@@ -1,23 +1,38 @@
-image = 'images/marker.png'
+/* global L:readonly */
+const mapBlock = document.querySelector('.search-hotel__wrapper-map');
 
-function initMap() {
-  var coordinates = {lat: 34.860853, lng: -111.772823};
-  var markerImage = 'img/icon-map-marker.svg',
+console.log(mapBlock);
 
-      map = new google.maps.Map(document.getElementById('map'), {
-          center: coordinates
-      });
+const mainIcon = L.icon({
+  iconUrl: '../../img/icon-map-marker.svg',
+  iconSize: [30, 30],
+  iconAnchor: [15, 30],
+});
 
-      marker = new google.maps.Marker({
-        position: coordinates,
-        map: map
-      });
+const mainMarker = L.marker(
+  {
+    lat: 34.8694,
+    lng: -111.7601,
+  },
+  {
+    draggable: false,
+    icon: mainIcon,
+  },
+);
 
-      marker = new google.maps.Marker({
-        position: coordinates,
-        map: map,
-        icon: markerImage,
-        animation: google.maps.Animation.BOUNCE
-      });
+let map = L.map(mapBlock)
+  .setView({
+    lat: 34.8694,
+    lng: -111.7601,
+  }, 8);
 
-}
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  },
+).addTo(map);
+
+console.log('init map')
+
+mainMarker.addTo(map);

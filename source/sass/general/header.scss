@@ -144,7 +144,6 @@
     }
 
     &--closed .main-nav__toggle {
-      width: 23px;
       height: 20px;
       border: 0;
 
@@ -152,7 +151,6 @@
       margin-top: 17px;
       margin-bottom: 22px;
       margin-left: 90%;
-      margin-right: 10%;
       background-color: white;
 
       &::before {

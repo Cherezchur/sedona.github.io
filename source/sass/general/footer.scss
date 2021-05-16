@@ -86,16 +86,12 @@
   }
 }
 
-.copyrigth__image {
-
-}
-
 //--------------------styles-for-tablet
 
 @media (min-width: $tablet-width) {
 
   .page-footer__wrapper {
-    width: 86%;
+    width: 648px;
     margin: 0 auto;
 
     justify-content: space-between;
@@ -124,8 +120,9 @@
 
 @media (min-width: $desktop-width) {
 
-  .page-footer__hash-tag {
-    margin-left: -12px;
+  .page-footer__wrapper {
+    width: 960px;
+    height: 130px;
   }
 
   .social {
