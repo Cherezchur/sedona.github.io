@@ -196,21 +196,25 @@
     margin: 0;
   }
 
+  .gallery__item {
+    width: 33.3%;
+  }
+
   .gallery__wrapper {
     position: relative;
     margin: 0;
 
-    width: 400px;
+    width: 100%;
     height: 267px;
 
     &--first {
-      // width: $desktop-width;
+      width: 100%;
       height: 400px;
     }
   }
 
   .gallery__image {
-    width: 400px;
+    width: 100%;
     height: 267px;
 
     &--first {
@@ -221,16 +225,15 @@
 
   .gallery__signature {
     position: absolute;
-    top: 196px;
-    width: 360px;
+    top: 192px;
+    width: calc(100% - 40px);
 
     color: white;
 
     background-color: rgba(0, 0, 0, 0.3);
 
     &--first {
-      top: 329px;
-      // width: 1160px;
+      top: 324px;
     }
   }
 
